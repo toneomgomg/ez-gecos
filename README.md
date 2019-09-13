@@ -1,10 +1,10 @@
-# ez-gecos (v0.1.0)
+# ez-gecos (v0.2.0)
 Tiny package to parse the GECOS field.
 
 ![GPLv3](https://img.shields.io/github/license/thohell/ez-gecos)
-![v0.1.0](https://img.shields.io/github/v/tag/thohell/ez-gecos)
+![v0.2.0](https://img.shields.io/github/v/tag/thohell/ez-gecos)
 
-- [Version](#version)
+- [v0.2.0](#version)
 - [Installation](#installation)
   - [PyPi](#pypi)
   - [Github](#github)

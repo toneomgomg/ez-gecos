@@ -1,3 +1,6 @@
+### Version 0.2.0
+- BUGFIX: regex in bump.json updated for README.md
+
 ### Version 0.1.0
 - bump.json changes for README.md
 - Added usage information
