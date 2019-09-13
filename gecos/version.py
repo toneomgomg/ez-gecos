@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with ez-gecos.  If not, see <http://www.gnu.org/licenses/>.
 
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 
 VERSION = __version__.split('.')
 NAME = "ez-gecos"

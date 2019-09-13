@@ -20,7 +20,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ez-gecos",
-    version='0.0.0',
+    version='0.0.1',
     description="Tiny python package to parse the GECOS field.",
     long_description=os.path.join(
         os.path.dirname(__file__),
