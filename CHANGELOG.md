@@ -1,3 +1,7 @@
+### Version 0.2.1
+- Should be ready for PyPi now
+- FIX: Classifiers borked
+
 ### Version 0.2.0
 - BUGFIX: regex in bump.json updated for README.md
 
