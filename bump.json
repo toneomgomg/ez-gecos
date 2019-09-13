@@ -1,0 +1,55 @@
+{
+    "version": {
+        "enabled": true,
+        "initial": "0.0.0",
+        "increments": [
+            "major",
+            "minor",
+            "patch",
+            "custom"
+        ]
+    },
+    "changelog": {
+        "enabled": true,
+        "create": true,
+        "open": false,
+        "file": "CHANGELOG.md",
+        "version": "### Version [version]",
+        "commit": "- [message]",
+        "separator": "\n"
+    },
+    "commit": {
+        "enabled": true,
+        "message": "Bumped version to [version]"
+    },
+    "tag": {
+        "enabled": true,
+        "name": "v[version]"
+    },
+    "release": {
+        "enabled": false
+    },
+    "files": {
+        "gecos/version.py": [
+            [
+                "__version__\\s*=\\s*\"([^\"]*)",
+                "__version__ = \"[version]"
+            ]
+        ],
+        "setup.py": [
+            [
+                "version\\s*=\\s*'([^']*)",
+                "version='[version]"
+            ]
+        ],
+        "README.md": [
+            [
+                "\\(v([^\\)]*)",
+                "(v[version]"
+            ]
+        ]
+    },
+    "scripts": {
+        "posttag": "git push && git push --tags"
+    }
+}
