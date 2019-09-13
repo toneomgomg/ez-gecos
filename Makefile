@@ -15,18 +15,23 @@
 # You should have received a copy of the GNU General Public License
 # along with ez-gecos.  If not, see <http://www.gnu.org/licenses/>.
 
-.phony: noop install-dev build publish bump-patch bump-minor bump-major
+.phony: noop build clean publish install-dev bump-patch bump-minor bump-major
 
 noop:
 
-install-dev:
-	@pipenv install --dev
 
 build:
-	@python setup.py sdist bdist_wheel
+	@python setup.py bdist_wheel
 
+clean:
+	@[ -d build ] && rm -rf build
+	@[ -d dist ] && rm -rf dist
+	
 publish:
-	@python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	@twine upload dist/*
+
+install-dev:
+	@pipenv install --dev
 
 bump-patch:
 	@bump patch

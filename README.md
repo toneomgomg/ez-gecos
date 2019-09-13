@@ -4,7 +4,7 @@ Tiny package to parse the GECOS field.
 ![GPLv3](https://img.shields.io/github/license/thohell/ez-gecos)
 ![v0.2.0](https://img.shields.io/github/v/tag/thohell/ez-gecos)
 
-- [v0.2.0](#version)
+- [Version](#version)
 - [Installation](#installation)
   - [PyPi](#pypi)
   - [Github](#github)
@@ -76,7 +76,7 @@ print(gecos.email_address)
 
 ## Links
 * ez-gecos on [Github](https://github.com/thohell/ez-gecos)
-* ez-gecos on [PyPi](https://pypi.org/)
+* ez-gecos on [PyPi](https://pypi.org/project/ez-gecos)
 
 ## License
 

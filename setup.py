@@ -32,4 +32,25 @@ setup(
     license='GPLv3',
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
+    classifiers=[
+        #   3 - Alpha
+        #   4 - Beta
+        #   5 - Production/Stable
+        'Development Status :: 3 - Beta',
+
+        # Audience
+        'Intended Audience :: Developers',
+
+        # License
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+
+        # Python versions (Only tested on Python 3.7)
+        'Programming Language :: Python :: 3.7',
+
+        # Operating system (Only tested on Linux)
+        'Operating System :: POSIX :: Linux',
+
+        # Topic
+        'Topic :: Software Development :: Libraries :: Python Modules'
+    ],
 )

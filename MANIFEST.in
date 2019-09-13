@@ -1,0 +1,6 @@
+include Pipfile
+include Makefile
+include CHANGELOG.md
+include .gitignore
+include LICENSE
+include bump.json
