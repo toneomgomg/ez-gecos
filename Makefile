@@ -15,10 +15,19 @@
 # You should have received a copy of the GNU General Public License
 # along with ez-gecos.  If not, see <http://www.gnu.org/licenses/>.
 
-.phony: noop bump-patch bump-minor bump-major
+.phony: noop install-dev build publish bump-patch bump-minor bump-major
 
 noop:
 
+install-dev:
+	@pipenv install --dev
+
+build:
+	@python setup.py sdist bdist_wheel
+
+publish:
+	@
+	
 bump-patch:
 	@bump patch
 

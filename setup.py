@@ -15,17 +15,16 @@
 # You should have received a copy of the GNU General Public License
 # along with ez-gecos.  If not, see <http://www.gnu.org/licenses/>.
 
-import os.path
 from setuptools import setup, find_packages
+
+with open("README.md", "r") as file:
+    long_description = file.read()
 
 setup(
     name="ez-gecos",
     version='0.0.1',
     description="Tiny python package to parse the GECOS field.",
-    long_description=os.path.join(
-        os.path.dirname(__file__),
-        "README.md"
-    ).read_text(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
     author="Thomas Hellström",
     author_email="rel@xed.se",
@@ -33,9 +32,4 @@ setup(
     license='GPLv3',
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
-    # classifiers=[
-    #     "License :: OSI Approved :: MIT License",
-    #     "Programming Language :: Python :: 3",
-    #     "Programming Language :: Python :: 3.7",
-    # ],
 )

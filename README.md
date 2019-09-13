@@ -7,12 +7,10 @@ Tiny package to parse the GECOS field.
 - [Version](#version)
 - [Installation](#installation)
   - [PyPi](#pypi)
-    - [pip](#pip)
-    - [pipenv](#pipenv)
   - [Github](#github)
-    - [pip](#pip-1)
-    - [pipenv](#pipenv-1)
+  - [From source](#from-source)
 - [Usage](#usage)
+- [Links](#links)
 - [License](#license)
 
 ## Version
@@ -20,26 +18,22 @@ Tiny package to parse the GECOS field.
 ez-gecos is only tested on Python 3.7
 
 ## Installation
+Simply install using pip (or pipenv).
 
-### [PyPi](https://pypi.org/)
-#### pip
+### PyPi
 ```
 pip install ez-gecos
 ```
-#### pipenv
-```
-pipenv install ez-gecos
-```
-### [Github](https://github.com/thohell/ez-gecos)
-#### pip
+### Github
 ```
 pip install git+https://github.com/thohell/ez-gecos.git
 ```
-#### pipenv
-```
-pipenv install git+https://github.com/thohell/ez-gecos.git
-```
 
+### From source
+```
+git clone https://github.com/thohell/ez-gecos.git
+pip install ./ez-gecos
+```
 ## Usage
 
 ```python
@@ -79,6 +73,10 @@ print(gecos)
 # returns first entry that looks like an email address.
 print(gecos.email_address)
 ```
+
+## Links
+* ez-gecos on [Github](https://github.com/thohell/ez-gecos)
+* ez-gecos on [PyPi](https://pypi.org/)
 
 ## License
 
