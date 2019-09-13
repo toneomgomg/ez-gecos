@@ -22,7 +22,7 @@ with open("README.md", "r") as file:
 
 setup(
     name="ez-gecos",
-    version='0.0.1',
+    version='0.1.0',
     description="Tiny python package to parse the GECOS field.",
     long_description=long_description,
     long_description_content_type="text/markdown",
